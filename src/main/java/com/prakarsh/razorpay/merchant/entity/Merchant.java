@@ -1,4 +1,4 @@
-package com.prakarsh.razorpay.merchent.entity;
+package com.prakarsh.razorpay.merchant.entity;
 
 import com.prakarsh.razorpay.common.enums.BusinessType;
 import com.prakarsh.razorpay.common.enums.MerchantStatus;
@@ -35,7 +35,7 @@ public class Merchant {
     private String websiteURL;
     @Column(length = 200,nullable = false)
     @Enumerated(EnumType.STRING)
-    private MerchantStatus status= MerchantStatus.PENDING_KYC;
+    private MerchantStatus setstatus= MerchantStatus.PENDING_KYC;
     @Column(length = 20)
     private String gstID;
     @Column(length = 20)
@@ -46,4 +46,5 @@ public class Merchant {
     private String settlementBankIfsc;
     @Column(length = 20)
     private String SettlementBankAccountHolderName;
+
 }

@@ -1,5 +1,5 @@
-package com.prakarsh.razorpay.merchent.entity;
-import com.codingshuttle.razorpay.common.entity.BaseEntity;
+package com.prakarsh.razorpay.merchant.entity;
+import com.prakarsh.razorpay.common.entity.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 

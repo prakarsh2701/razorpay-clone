@@ -1,13 +1,18 @@
-package com.prakarsh.razorpay.merchent.entity;
+package com.prakarsh.razorpay.merchant.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
 @Table(name = "customer")
+@Getter
+@AllArgsConstructor
+@Builder
 public class Customer {
 
     @Id

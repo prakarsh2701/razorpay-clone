@@ -1,16 +1,19 @@
-package com.prakarsh.razorpay.merchent.entity;
+package com.prakarsh.razorpay.merchant.entity;
 
 import com.prakarsh.razorpay.common.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 
 import java.util.UUID;
 
-@Entity
+
 @Table(name="app_user")
+@Entity
 @Getter
 @AllArgsConstructor
+@Builder
 public class AppUser {
     @Id
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.UUID)

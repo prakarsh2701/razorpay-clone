@@ -1,10 +1,16 @@
-package com.prakarsh.razorpay.merchent.entity;
+package com.prakarsh.razorpay.merchant.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
 
 import java.util.UUID;
 @Entity
 @Table(name="api_key")
+@Getter
+@AllArgsConstructor
+@Builder
 public class APIKey {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
