@@ -6,12 +6,14 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.UUID;
 
 @Entity
 @Table
 @Getter
+@Setter
 @AllArgsConstructor
 @Builder
 public class Merchant {
@@ -23,7 +25,7 @@ public class Merchant {
     private String name;
     @Column(nullable = false, unique = true)
     private  String email;
-    @Column(nullable = false, unique = true)
+    @Column(unique = true)
     private String contactNumber;
 
     @Column(length = 50)
@@ -35,7 +37,7 @@ public class Merchant {
     private String websiteURL;
     @Column(length = 200,nullable = false)
     @Enumerated(EnumType.STRING)
-    private MerchantStatus setstatus= MerchantStatus.PENDING_KYC;
+    private MerchantStatus status;
     @Column(length = 20)
     private String gstID;
     @Column(length = 20)

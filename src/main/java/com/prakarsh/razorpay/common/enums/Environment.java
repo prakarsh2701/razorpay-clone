@@ -4,7 +4,4 @@ public enum Environment {
     Live,
     Test;
 
-    public enum OrderStatus {
-
-    }
 }

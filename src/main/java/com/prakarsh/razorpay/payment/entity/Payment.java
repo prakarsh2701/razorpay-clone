@@ -16,9 +16,10 @@ public class Payment {
     @Id
     @GeneratedValue(strategy=jakarta.persistence.GenerationType.UUID)
     private UUID id;
-    @ManyToOne(fetch = FetchType.LAZY,optional = false)
-    @Column(name = "order_id",nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "order_id", nullable = false)
     private OrderRecord order;
+
     @Column(nullable = false)
     private UUID merchantId;
     @Embedded

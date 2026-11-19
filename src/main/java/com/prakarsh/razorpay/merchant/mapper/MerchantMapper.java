@@ -6,7 +6,7 @@ import com.prakarsh.razorpay.merchant.entity.Merchant;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 
-
+@Mapper(componentModel = "spring")
 public interface MerchantMapper {
 
     Merchant toEntityFromSignUpRequest(MerchantSignupRequest request);

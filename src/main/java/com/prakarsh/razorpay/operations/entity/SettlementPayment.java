@@ -15,7 +15,7 @@ import lombok.*;
 public class SettlementPayment extends BaseEntity {
 
     @EmbeddedId
-    private com.codingshuttle.razorpay.operations.entity.SettlementPaymentId id;
+    private com.prakarsh.razorpay.operations.entity.SettlementPaymentId id;
 
     @MapsId("settlementId")
     @ManyToOne(fetch = FetchType.LAZY, optional = false)

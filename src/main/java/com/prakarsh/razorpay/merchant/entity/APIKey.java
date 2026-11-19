@@ -1,5 +1,6 @@
 package com.prakarsh.razorpay.merchant.entity;
 
+import com.prakarsh.razorpay.common.enums.Environment;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -24,7 +25,7 @@ public class APIKey {
     private String keySecretHash;
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 20)
-    private String environment;
+    private Environment environment;
     @Column(nullable = false)
     private boolean enabled=true;
     private java.time.LocalDateTime lastUsedAt;
